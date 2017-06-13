@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_store"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xkyb.jf.ui.activity.DetailStoreActivity">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/easy_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qrcode_back_selector"  />
+
+        <ImageView
+            android:id="@+id/fx"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/content_head_icon_collect"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/fx"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/content_head_icon_share" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabBg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <!--登录图标-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tabBg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_red_500"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_detail_icon"
+                    android:layout_width="@dimen/image_icon_size"
+                    android:layout_height="@dimen/image_icon_size"
+                    android:layout_centerVertical="true"
+                    app:failureImage="@mipmap/con_my_head_hp"
+                    app:placeholderImage="@mipmap/con_my_head_hp"
+                    app:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/user_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="登录/注册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <!--账户积分-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@mipmap/con_my_con_income"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="我的收入"
+                    android:textColor="@color/md_black_1000_75" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@mipmap/con_my_con_wop"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="小康积分"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@mipmap/con_my_con_balance"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="账户金额"
+                    android:textColor="@color/md_black_1000_75" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@mipmap/con_my_con_goback"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="已返还金额"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+            <!--充值提现认证设置-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/md_red_500"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="充值"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/withdrawals"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/md_red_500"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="提现"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/realName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@mipmap/con_my_con_name_normal"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="实名认证"
+                    android:textColor="@color/md_black_1000_75" />
+
+                <TextView
+                    android:id="@+id/security_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableLeft="@mipmap/con_my_con_safe_normal"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="安全设置"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+            <!--明细列表-->
+            <LinearLayout
+                android:id="@+id/consumer_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/con_my_con_icon_down"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/con_my_con_icon_right"
+                    android:gravity="center_vertical"
+                    android:text="消费明细查询"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/return_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/con_my_con_icon_down"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/con_my_con_icon_right"
+                    android:gravity="center_vertical"
+                    android:text="返还明细查询"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/con_my_con_icon_down"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/con_my_con_icon_right"
+                    android:gravity="center_vertical"
+                    android:text="账户流水查询"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/income_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/con_my_con_icon_down"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/con_my_con_icon_right"
+                    android:gravity="center_vertical"
+                    android:text="收入明细查询"
+                    android:textColor="@color/md_black_1000_75" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
